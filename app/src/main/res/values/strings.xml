@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Find Falcone</string>
+    <string name="news">Your Highness, \n \t\t\t\t\tOur Intel brings you the news of possible hideout of our enemy, Al Falcone, Our men are waiting for your decision</string>
+    <string name="decision">Lets Proceed</string>
+</resources>
