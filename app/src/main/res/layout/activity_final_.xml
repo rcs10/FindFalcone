@@ -1,9 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Final_Activity">
+    tools:context=".Planets_Selection">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue700"
+        android:elevation="4dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AlertDialog.AppCompat.Light" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/findfalcone"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/final_message"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/final_message"
+        android:gravity="center_vertical"/>
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/finalScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/final_message"
+    android:layout_above="@id/finalButton">
+    <ImageView
+        android:id="@+id/findFalconHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/findfalcone"/>
+</androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_above="@id/finalButton"
+        android:layout_below="@id/final_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/positive_message_holder"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/planetFound"
+                android:textColor="@color/blue300"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/planetName"
+                android:textColor="@color/blue300"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/timeTaken"
+                android:textColor="@color/blue300"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/planetName"
+                android:textColor="@color/blue300"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/finalButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:padding="5dp"
+        android:text="@string/final_Button"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
