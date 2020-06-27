@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".resource_allocation"
-    android:orientation="vertical">
+    tools:context=".Planets_Selection">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -36,13 +35,45 @@
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
-        android:layout_marginTop="20dp"
+        android:id="@+id/resource_header"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Resource Allocation"
+        android:text="@string/planet_selection"
         android:textColor="@color/blue300"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:layout_below="@id/toolbar"/>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/planetintro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_below="@id/resource_header"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/planetIntro" />
+
+    <ListView
+        android:layout_below="@id/planetintro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/Next"
+        android:id="@+id/listView"
+        android:listSelector="@drawable/view_background">
+    </ListView>
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:padding="5dp"
+        android:text="@string/planetsSelected"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

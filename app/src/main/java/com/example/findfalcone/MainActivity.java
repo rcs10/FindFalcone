@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void decisionClicked(View v)
     {
-        Intent resourceallocation = new Intent(MainActivity.this,resource_allocation.class);
-        startActivity(resourceallocation);
+        Intent toPlanetsSelection = new Intent(MainActivity.this, Planets_Selection.class);
+        startActivity(toPlanetsSelection);
     }
 }
