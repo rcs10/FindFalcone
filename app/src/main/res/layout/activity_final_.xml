@@ -35,19 +35,30 @@
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
-        android:id="@+id/final_message"
+        android:id="@+id/final_message_pos"
         android:layout_below="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:text="@string/final_message"
+        android:text="@string/final_message_pos"
         android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/final_message_neg"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/final_message_neg"
+        android:gravity="center_vertical"/>
+
 <androidx.core.widget.NestedScrollView
     android:id="@+id/finalScrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_below="@id/final_message"
+    android:layout_below="@id/final_message_pos"
     android:layout_above="@id/finalButton">
     <ImageView
         android:id="@+id/findFalconHolder"
@@ -60,14 +71,13 @@
 
     <LinearLayout
         android:layout_above="@id/finalButton"
-        android:layout_below="@id/final_message"
+        android:layout_below="@id/final_message_pos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/positive_message_holder"
         android:orientation="vertical"
         android:layout_centerVertical="true"
-        android:gravity="center"
-        >
+        android:gravity="center">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -85,6 +95,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/final_planet_name"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -110,10 +121,10 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/final_time_taken"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/planetName"
                 android:textColor="@color/blue300"
                 android:gravity="center_horizontal"
                 android:textSize="20sp"/>

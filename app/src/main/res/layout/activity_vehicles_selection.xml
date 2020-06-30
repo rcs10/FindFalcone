@@ -103,6 +103,7 @@
                 android:textSize="20sp"/>
 
             <Spinner
+                android:entries="@array/vehicle"
                 android:id="@+id/spinner1"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -126,6 +127,7 @@
                 android:textSize="20sp"/>
 
             <Spinner
+                android:entries="@array/vehicle"
                 android:id="@+id/spinner2"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -148,6 +150,7 @@
                 android:textSize="20sp"/>
 
             <Spinner
+                android:entries="@array/vehicle"
                 android:id="@+id/spinner3"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -170,6 +173,7 @@
                 android:textSize="20sp"/>
 
             <Spinner
+                android:entries="@array/vehicle"
                 android:id="@+id/spinner4"
                 android:layout_width="0dp"
                 android:layout_weight="1"

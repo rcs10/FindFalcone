@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Find Falcone</string>
-    <string name="news">Your Highness, \n \t\t\t\t\tOur Intel brings you the news of possible hideout of our enemy, Al Falcone, Our men are waiting for your decision</string>
+    <string name="news">Your Highness, \n \t\t\t\t\tOur Intel brings you the news of possible hideout of our enemy, Al Falcone.\n Our men are waiting for your decision</string>
     <string name="decision">Lets Proceed</string>
     <string name="planetName">Planet Name</string>
     <string name="distance">Distance:</string>
@@ -26,8 +26,16 @@
     <string name="planet3">Planet 3</string>
     <string name="planet4">Planet 4</string>
     <string name="spinner_prompt">Select unit to dispatch</string>
-    <string name="final_message">Your smartness knew no bounds my king, this crucial hunt is going down in history as the best one ever!! \n Al Falcone\'s excile period starts over again</string>
+    <string name="final_message_pos">Your smartness knew no bounds my king, this crucial hunt is going down in history as the best one ever!! \n Al Falcone\'s excile period starts over again</string>
     <string name="planetFound">Planet Found In</string>
     <string name="timeTaken">Time Taken</string>
     <string name="final_Button">Start Again</string>
+    <string name="final_message_neg">Oops, our dispatched units couldn\'t find Al Falcone in those areas</string>
+    <string-array name="vehicle">
+        <item>Null</item>
+        <item>Space pod</item>
+        <item>Space rocket</item>
+        <item>Space shuttle</item>
+        <item>Space ship</item>
+    </string-array>
 </resources>

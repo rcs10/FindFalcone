@@ -24,4 +24,12 @@ public class MainActivity extends AppCompatActivity {
         Intent toPlanetsSelection = new Intent(MainActivity.this, Planets_Selection.class);
         startActivity(toPlanetsSelection);
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent a = new Intent(Intent.ACTION_MAIN);
+        a.addCategory(Intent.CATEGORY_HOME);
+        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(a);
+    }
 }
